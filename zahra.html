@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pendaftaran Pasien Klinik Hijau</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(120deg, #2ecc71, #27ae60);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+    
+    header {
+      width: 100%;
+      background: #145a32;
+      color: #fff;
+      text-align: center;
+      padding: 1.5rem;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    
+    header h1 {
+      margin: 0;
+      font-size: 1.9rem;
+    }
+    
+    .Formulir {
+      background: #fefefe;
+      margin-top: 2rem;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+      max-width: 500px;
+      width: 90%;
+    }
+    
+    .Formulir h1 {
+      text-transform: uppercase;
+      text-align: center;
+      color: #145a32;
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+    }
+    
+    form p {
+      font-weight: bold;
+      margin-bottom: 0.3rem;
+      color: #333;
+    }
+    
+    input[type="text"] {
+      width: 100%;
+      padding: 0.7rem;
+      margin-bottom: 1rem;
+      border: 2px solid #ccc;
+      border-radius: 8px;
+      transition: border 0.3s;
+      box-sizing: border-box;
+    }
+    
+    input[type="text"]:focus {
+      border: 2px solid #27ae60;
+      outline: none;
+    }
+    
+    button {
+      background: #27ae60;
+      color: white;
+      padding: 0.8rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+      font-weight: bold;
+      transition: background-color 0.3s;
+      width: 100%;
+      margin-top: 1rem;
+    }
+    
+    button:hover {
+      background: #1e8449;
+    }
+    
+    #oke {
+      max-width: 600px;
+      margin: 30px auto;
+      background-color: #ffffff;
+      border-left: 6px solid #6c63ff;
+      padding: 20px 30px;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      color: #333;
+      display: none;
+    }
+    
+    #oke h2 {
+      margin-top: 0;
+      color: #6c63ff;
+      font-size: 20px;
+      border-bottom: 1px solid #eee;
+      padding-bottom: 10px;
+      text-align: center;
+    }
+    
+    #oke p {
+      margin: 8px 0;
+      line-height: 1.5;
+      font-size: 1rem;
+    }
+    
+    #oke b {
+      color: #145a32;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>🌿 Klinik Hijau</h1>
+    <p>Formulir Pendaftaran Pasien</p>
+  </header>
+
+  <div class="Formulir">
+    <h1>Formulir Pendaftaran Pasien</h1>
+    
+    <script>
+      var yakin = confirm("Apakah kamu yakin ingin membuka formulir ini?");
+       if (yakin){
+        window.location = "https://otakudesu.best/anime/akamoto-day-part-2-sub-indo/";
+       } else{
+        document.write("");
+       }
+    </script>
+    
+    <form id="FormSaya">
+      <script>
+        var label1 = prompt("Apa yang Mau Kamu Minta ?", "Nama Lengkap" );
+        document.write("<p><b>"+ label1 +"</b></p>");
+      </script>
+      <input type="text" id="nama" required>
+        
+      <script>
+        var label2 = prompt("Apa yang Mau Kamu Minta ?", "Umur" );
+        document.write("<p><b>"+ label2 +"</b></p>");
+      </script>
+      <input type="text" id="umur" required>
+      
+      <script>
+        var label3 = prompt("Apa yang Mau Kamu Minta ?", "Jenis Kelamin" );
+        document.write("<p><b>"+ label3 +"</b></p>");
+      </script>
+      <input type="text" id="jenis_kelamin" required>
+      
+      <script>
+        var label4 = prompt("Apa yang Mau Kamu Minta ?", "Alamat" );
+        document.write("<p><b>"+ label4 +"</b></p>");
+      </script>
+      <input type="text" id="alamat" required>
+      
+      <script>
+        var label5 = prompt("Apa yang Mau Kamu Minta ?", "Riwayat Penyakit" );
+        document.write("<p><b>"+ label5 +"</b></p>");
+      </script>
+      <input type="text" id="riwayat_penyakit" required>
+      
+      <script>
+        var label6 = prompt("Apa yang Mau Kamu Minta ?", "Gejala Awal" );
+        document.write("<p><b>"+ label6 +"</b></p>");
+      </script>
+      <input type="text" id="gejala_awal" required>
+      
+      <button type="submit">Kirim</button>
+    </form>
+  </div>
+  
+  <div id="oke"></div>
+
+  <script>
+    const form = document.getElementById("FormSaya");
+    const hasil = document.getElementById("oke");
+    
+    form.addEventListener("submit", function(event) {
+      event.preventDefault();
+
+      const nama = document.getElementById("nama").value;
+      const umur = document.getElementById("umur").value;
+      const jenisKelamin = document.getElementById("jenis_kelamin").value;
+      const alamat = document.getElementById("alamat").value;
+      const riwayatPenyakit = document.getElementById("riwayat_penyakit").value;
+      const gejalaAwal = document.getElementById("gejala_awal").value;
+
+      hasil.style.display = "block";
+      hasil.innerHTML = `
+        <h2>DATA PRIBADI PASIEN</h2>
+        <p><b>Nama:</b> ${nama}</p>
+        <p><b>Umur:</b> ${umur}</p>
+        <p><b>Jenis Kelamin:</b> ${jenisKelamin}</p>
+        <p><b>Alamat:</b> ${alamat}</p>
+        <p><b>Riwayat Penyakit:</b> ${riwayatPenyakit}</p>
+        <p><b>Gejala Awal:</b> ${gejalaAwal}</p>
+      `;
+      
+      // Scroll to result
+      hasil.scrollIntoView({ behavior: 'smooth' });
+    });
+  </script>
+
+</body>
+</html>
